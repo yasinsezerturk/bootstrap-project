@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap Project</title>
-    <link rel="icon" type="images/x-icon" href="./akbank.png" />
+    <title>Document</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,416 +16,366 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="top-menu">
-      <nav class="navbar bg-body-secondary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./logo_company_small.png" alt="Logo" />
-          </a>
-          <div class="dropdown">
-            <button
-              class="btn dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-            >
-              <span><b>Yasin Sezer Türk</b> </span>
-            </button>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="#"
-                  ><ion-icon name="settings-outline"></ion-icon> Edit Profil</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="#"
-                  ><ion-icon name="person-outline"></ion-icon> Settings &
-                  Privacy</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="#"
-                  ><ion-icon name="log-out-outline"></ion-icon> Logout</a
-                >
-              </li>
-            </ul>
+    <header>
+      <nav
+        class="d-flex flex-column flex-sm-row bg-secondary bg-opacity-25 justify-content-between align-items-center h-auto py-sm-3"
+      >
+        <div class="nav d-flex flex-column flex-sm-row text-center">
+          <div class="nav-item">
+            <img src="logo_company_small.png" class="nav-link" href="#" />
+          </div>
+          <div class="nav-item">
+            <a class="nav-link text-secondary" href="#">All Ads</a>
+          </div>
+          <div class="nav-item">
+            <a class="nav-link text-secondary" href="#">All Offers</a>
+          </div>
+        </div>
+        <div>
+          <div class="nav">
+            <div class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-secondary"
+                data-bs-toggle="dropdown"
+                href="#"
+                >Yasin Sezer Türk</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                <li><a class="dropdown-item" href="#">Link 3</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
-    </div>
-    <nav class="navbar" style="background-color: #ef3125">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#" style="height: 80px">
-          <img src="./akbanklogo.png" alt="Logo" />
-        </a>
-        <span class="text-white" style="margin-right: 1rem"
-          ><b>All Offers</b>
-        </span>
-      </div>
-    </nav>
-
-    <div class="container-fluid text-center mt-5">
-      <div class="row row-cols-3">
-        <div class="col border rounded">
-          <table class="table border mt-3">
-            <thead>
-              <tr>
-                <th colspan="2">
-                  <ion-icon name="briefcase-outline"></ion-icon> ISB-001 KAYSERI
-                  AKKISLA
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="text-secondary">Appraisal Fee</td>
-                <td class="fw-semibold text-secondary">300.000 TL</td>
-              </tr>
-              <tr>
-                <td class="text-secondary">Starting Price</td>
-                <td class="fw-semibold text-secondary">310.000 TL</td>
-              </tr>
-              <tr>
-                <td class="text-secondary">Highest Bid</td>
-                <td class="fw-bold">330.000 TL</td>
-              </tr>
-              <tr>
-                <td class="text-secondary align-middle">Last Bid Date</td>
-                <td class="fw-bold">
-                  17.03.2022 <br />
-                  18:00
-                </td>
-              </tr>
-            </tbody>
-          </table>
+      <nav
+        class="d-flex justify-content-between align-items-center"
+        style="height: 5rem; background-color: #ef2d20"
+      >
+        <div class="nav">
+          <img src="akbanklogo.png" class="nav-link" href="#" />
         </div>
-
-        <div class="col align-self-center">
-          <svg
-            class="align-middle"
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            fill="currentColor"
-            class="bi bi-house"
-            viewBox="0 0 16 16"
-            style="color: red"
+        <div class="nav">
+          <a class="nav-link text-white" href="#">All Offers</a>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="container mt-5 d-xl-flex">
+        <ul class="list-group shadow style-responsive-left">
+          <li class="list-group-item d-flex justify-content-center fw-bold">
+            <i class="bi bi-briefcase-fill"></i>&nbsp;ISB-001 KAYSERI AKKISLA
+          </li>
+          <li class="list-group-item">
+            <ul class="list-group-item d-flex justify-content-between">
+              <div class="text-secondary">Appraisal Fee</div>
+              <div class="fw-bold text-secondary">300.000 TL</div>
+            </ul>
+          </li>
+          <li class="list-group-item">
+            <ul class="list-group-item d-flex justify-content-between">
+              <div class="text-secondary">Starting Price</div>
+              <div class="fw-bold text-secondary">310.000 TL</div>
+            </ul>
+          </li>
+          <li class="list-group-item">
+            <ul class="list-group-item d-flex justify-content-between">
+              <div class="text-secondary">Highest Bid</div>
+              <div class="fw-bold">330.000 TL</div>
+            </ul>
+          </li>
+          <li class="list-group-item">
+            <ul class="list-group-item d-flex justify-content-between">
+              <div class="text-secondary align-self-center">Last Bid Date</div>
+              <div class="d-flex fw-bold flex-column text-center">
+                <div>17.03.2022</div>
+                <div>18:00</div>
+              </div>
+            </ul>
+          </li>
+        </ul>
+        <div
+          class="d-flex justify-content-center align-items-center flex-column style-responsive-center my-3"
+        >
+          <i class="bi bi-house text-danger h2"></i>
+          <div class="fw-bold text-danger">Real Estate Detail</div>
+        </div>
+        <ul
+          class="list-group shadow align-self-center style-responsive-right"
+          style="height: fit-content"
+        >
+          <a
+            href="#id1"
+            data-bs-toggle="collapse"
+            style="text-decoration: none"
           >
-            <path
-              d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"
-            />
-          </svg>
-          <h6 style="color: red" class="align-middle">Real Estate Detail</h6>
-        </div>
-
-        <div class="col">
-          <table
-            class="table"
-            style="padding: 5px; box-shadow: 1px 2px 8px #c1c1c1"
-          >
-            <thead>
-              <tr>
-                <td class="fw-semibold" style="text-align: left">
-                  <b>Incoming Offers</b>
-                </td>
-                <td class="text-secondary">Telephone</td>
-                <td class="text-secondary">Situation</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="fw-semibold align-middle">Ahmet Yılmaz SAYGINER</td>
-                <td class="align-middle">0(555)5342625</td>
-                <td class="text-secondary">
-                  Current Offer <br />
-                  <div class="dropdown">
-                    <button
-                      class="btn text-danger dropdown-toggle"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      310.000 TL
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Transfer</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Avans</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Yatırım</a>
-                      </li>
-                    </ul>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="fw-semibold align-middle">Mustafa YEŞİLDAĞ</td>
-                <td class="align-middle">0(555)5343325</td>
-                <td class="text-secondary">
-                  Current Offer <br />
-                  <div class="dropdown">
-                    <button
-                      class="btn text-danger dropdown-toggle"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      320.000 TL
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Transfer</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Avans</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Yatırım</a>
-                      </li>
-                    </ul>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="fw-semibold align-middle">Yakup ELMAS</td>
-                <td class="align-middle">0(555)5342625</td>
-                <td class="text-secondary">
-                  Current Offer <br />
-                  <div class="dropdown">
-                    <button
-                      class="btn text-danger dropdown-toggle"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      330.000 TL
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Transfer</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Avans</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Yatırım</a>
-                      </li>
-                    </ul>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="col border rounded">
-          <table class="table border mt-3">
-            <thead>
-              <tr>
-                <th colspan="2">
-                  <ion-icon name="briefcase-outline"></ion-icon> ISB-002 ANKARA
-                  MAMAK
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="text-secondary">Appraisal Fee</td>
-                <td class="fw-semibold text-secondary">150.000 TL</td>
-              </tr>
-              <tr>
-                <td class="text-secondary">Starting Price</td>
-                <td class="fw-semibold text-secondary">160.000 TL</td>
-              </tr>
-              <tr>
-                <td class="text-secondary">Highest Bid</td>
-                <td class="fw-bold">17.000 TL</td>
-              </tr>
-              <tr>
-                <td class="text-secondary align-middle">Last Bid Date</td>
-                <td class="fw-bold text-danger">
-                  17.03.2022 <br />
-                  18:00
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="col align-self-center">
-          <svg
-            class="align-middle"
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            fill="currentColor"
-            class="bi bi-house"
-            viewBox="0 0 16 16"
-            style="color: red"
-          >
-            <path
-              d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"
-            />
-          </svg>
-          <h6 style="color: red" class="align-middle">Real Estate Detail</h6>
-        </div>
-        <div class="col">
-          <table class="table" style="box-shadow: 1px 2px 8px #c1c1c1">
-            <thead>
-              <tr>
-                <td class="fw-semibold" style="text-align: left">
-                  <b>Incoming Offers</b>
-                </td>
-                <td class="text-secondary">Telephone</td>
-                <td class="text-secondary">Situation</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="fw-semibold align-middle">Kazım Emre Akarsu</td>
-                <td class="align-middle">0(555)5342625</td>
-                <td>
-                  <button
-                    class="btn"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#demo1"
+            <li class="list-group-item d-flex text-center">
+              <div class="fw-bold" style="width: 40%">İncoming Offers</div>
+              <div class="text-secondary" style="width: 25%">Telephone</div>
+              <div class="text-secondary" style="width: 35%">Situation</div>
+            </li>
+          </a>
+          <div id="id1" class="collapse show">
+            <li class="list-group-item d-flex text-center">
+              <div style="width: 40%">Ahmet Yılmaz Saygıner</div>
+              <div style="width: 25%">0(555)5342625</div>
+              <div class="d-flex" style="width: 35%">
+                <div class="text-secondary">Current Offer</div>
+                <div class="dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-danger"
+                    data-bs-toggle="dropdown"
+                    href="#"
                   >
-                    <h6 style="color: red" class="btn dropdown-toggle">
-                      <b>The deed will be done</b>
-                    </h6>
-                  </button>
-                  <div id="demo1" class="collapse">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Quo eum dolorum, necessitatibus officiis doloremque soluta
-                    blanditiis. Assumenda distinctio eaque, illo quibusdam
-                    corporis quaerat. Possimus nobis, assumenda distinctio
-                    deserunt explicabo voluptates.
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="col border rounded">
-          <table class="table border mt-3">
-            <thead>
-              <tr>
-                <th colspan="2">
-                  <ion-icon name="briefcase-outline"></ion-icon> ISB-003 İZMİR
-                  KONAK
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="text-secondary">Appraisal Fee</td>
-                <td class="fw-semibold text-secondary">2.000 TL</td>
-              </tr>
-              <tr>
-                <td class="text-secondary">Starting Price</td>
-                <td class="fw-semibold text-secondary">2.100 TL</td>
-              </tr>
-
-              <tr>
-                <td class="text-secondary align-middle">Last Bid Date</td>
-                <td class="fw-bold">
-                  10.03.2022 <br />
-                  18:00
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <h5 class="text-danger fw-bold">
-                    Teklif süresi sona erdi.(4 Gün)
-                  </h5>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="col align-self-center">
-          <svg
-            class="align-middle"
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            fill="currentColor"
-            class="bi bi-house"
-            viewBox="0 0 16 16"
-            style="color: red"
-          >
-            <path
-              d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"
-            />
-          </svg>
-          <h6 style="color: red" class="align-middle">Real Estate Detail</h6>
-        </div>
-        <div class="col">
-          <table
-            class="table"
-            style="padding: 5px; box-shadow: 1px 2px 8px #c1c1c1"
-          >
-            <tr>
-              <th colspan="5" style="text-align: left">Incoming Offers</th>
-            </tr>
-            <tr>
-              <td rowspan="5">Mustafa Selman ÖNAL</td>
-            </tr>
-            <tr>
-              <td class="align-middle" style="border: 0">Application Date</td>
-              <td class="fw-bold align-middle" style="border: 0">10.03.2022</td>
-              <td class="text-secondary" rowspan="5" style="border: 0">
-                <button
-                  class="btn"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#demo2"
-                >
-                  <h6 style="color: red" class="btn dropdown-toggle">
-                    <b>Did Not Offer</b>
-                  </h6>
-                </button>
-                <div id="demo2" class="collapse">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo
-                  eum dolorum, necessitatibus officiis doloremque soluta
-                  blanditiis. Assumenda distinctio eaque, illo quibusdam
-                  corporis quaerat. Possimus nobis, assumenda distinctio
-                  deserunt explicabo voluptates.
+                    &nbsp;310.000
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Link 1</a></li>
+                    <li><a class="dropdown-item" href="#">Link 2</a></li>
+                    <li><a class="dropdown-item" href="#">Link 3</a></li>
+                  </ul>
                 </div>
-                <div class="container mt-3">
-                  <button type="button" class="btn btn-danger">
-                    View All Details
-                  </button>
+              </div>
+            </li>
+            <li class="list-group-item d-flex text-center">
+              <div style="width: 40%">Mustafa Yeşildağ</div>
+              <div style="width: 25%">0(555)5343325</div>
+              <div class="d-flex" style="width: 35%">
+                <div class="text-secondary">Current Offer</div>
+                <div class="dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-danger"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                  >
+                    &nbsp;310.000
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Link 1</a></li>
+                    <li><a class="dropdown-item" href="#">Link 2</a></li>
+                    <li><a class="dropdown-item" href="#">Link 3</a></li>
+                  </ul>
                 </div>
-              </td>
-            </tr>
-            <tr>
-              <td style="border: 0">Bid Amount</td>
-              <td class="fw-bold" style="border: 0">-</td>
-            </tr>
-            <tr>
-              <td style="border: 0">E-mail</td>
-              <td style="border: 0">
-                <a
-                  class="fw-bold"
-                  href="#"
-                  style="text-decoration: none; color: black"
-                  >onal@gmail.com</a
-                >
-              </td>
-            </tr>
-            <tr>
-              <td style="border: 0">Telephone</td>
-              <td class="fw-bold" style="border: 0">0(551)4564566</td>
-            </tr>
-          </table>
-        </div>
+              </div>
+            </li>
+            <li class="list-group-item d-flex text-center">
+              <div style="width: 40%">Yakup Elmas</div>
+              <div style="width: 25%">0(555)5343325</div>
+              <div class="d-flex" style="width: 35%">
+                <div class="text-secondary">Current Offer</div>
+                <div class="dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-danger"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                  >
+                    &nbsp;310.000
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Link 1</a></li>
+                    <li><a class="dropdown-item" href="#">Link 2</a></li>
+                    <li><a class="dropdown-item" href="#">Link 3</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </div>
+        </ul>
       </div>
-    </div>
+    </section>
+    <section>
+      <div class="container mt-5 d-xl-flex">
+        <ul class="list-group shadow style-responsive-left">
+          <li class="list-group-item d-flex justify-content-center fw-bold">
+            <i class="bi bi-briefcase-fill"></i>&nbsp;ISB-002 ANKARA MAMAK
+          </li>
+          <li class="list-group-item">
+            <ul class="list-group-item d-flex justify-content-between">
+              <div class="text-secondary">Appraisal Fee</div>
+              <div class="fw-bold text-secondary">300.000 TL</div>
+            </ul>
+          </li>
+          <li class="list-group-item">
+            <ul class="list-group-item d-flex justify-content-between">
+              <div class="text-secondary">Starting Price</div>
+              <div class="fw-bold text-secondary">310.000 TL</div>
+            </ul>
+          </li>
+          <li class="list-group-item">
+            <ul class="list-group-item d-flex justify-content-between">
+              <div class="text-secondary">Highest Bid</div>
+              <div class="fw-bold">330.000 TL</div>
+            </ul>
+          </li>
+          <li class="list-group-item">
+            <ul class="list-group-item d-flex justify-content-between">
+              <div class="text-secondary align-self-center">Last Bid Date</div>
+              <div class="d-flex fw-bold text-danger flex-column text-center">
+                <div>17.03.2022</div>
+                <div>18:00</div>
+              </div>
+            </ul>
+          </li>
+        </ul>
+        <div
+          class="d-flex justify-content-center align-items-center flex-column style-responsive-center my-3"
+        >
+          <i class="bi bi-house text-danger h2"></i>
+          <div class="fw-bold text-danger">Real Estate Detail</div>
+        </div>
+        <ul
+          class="list-group shadow align-self-center style-responsive-right"
+          style="height: fit-content"
+        >
+          <a
+            href="#id2"
+            data-bs-toggle="collapse"
+            style="text-decoration: none"
+          >
+            <li class="list-group-item d-flex text-center">
+              <div class="fw-bold" style="width: 40%">İncoming Offers</div>
+              <div class="text-secondary" style="width: 25%">Telephone</div>
+              <div class="text-secondary" style="width: 35%">Situation</div>
+            </li>
+          </a>
+          <div id="id2" class="collapse show">
+            <li class="list-group-item d-flex text-center">
+              <div style="width: 40%">Kazım Emre Karasu</div>
+              <div style="width: 25%">0(555)5342625</div>
+              <div class="d-flex" style="width: 35%">
+                <div class="dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-danger fw-bold"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                  >
+                    The deed will be done
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Link 1</a></li>
+                    <li><a class="dropdown-item" href="#">Link 2</a></li>
+                    <li><a class="dropdown-item" href="#">Link 3</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <div class="container mt-5 d-xl-flex">
+        <ul class="list-group shadow style-responsive-left">
+          <li class="list-group-item d-flex justify-content-center fw-bold">
+            <i class="bi bi-briefcase-fill"></i>&nbsp;ISB-003 İZMİR KONAK
+          </li>
+          <li class="list-group-item">
+            <ul class="list-group-item d-flex justify-content-between">
+              <div class="text-secondary">Appraisal Fee</div>
+              <div class="fw-bold text-secondary">2.000 TL</div>
+            </ul>
+          </li>
+          <li class="list-group-item">
+            <ul class="list-group-item d-flex justify-content-between">
+              <div class="text-secondary">Starting Price</div>
+              <div class="fw-bold text-secondary">2.100 TL</div>
+            </ul>
+          </li>
+          <li class="list-group-item">
+            <ul class="list-group-item d-flex justify-content-between">
+              <div class="text-secondary">Last Bid Date</div>
+              <div class="d-flex flex-column text-center fw-bold">
+                <div>10.03.2022</div>
+                <div>18:00</div>
+              </div>
+            </ul>
+          </li>
+          <li class="list-group-item">
+            <ul class="list-group-item d-flex justify-content-center">
+              <div class="fw-bold text-danger">
+                Teklif süresi sona erdi.(4 gün)
+              </div>
+            </ul>
+          </li>
+        </ul>
+        <div
+          class="d-flex justify-content-center align-items-center flex-column style-responsive-center my-3"
+        >
+          <i class="bi bi-house text-danger h2"></i>
+          <div class="fw-bold text-danger">Real Estate Detail</div>
+        </div>
+        <ul
+          class="list-group shadow align-self-center style-responsive-right"
+          style="height: fit-content"
+        >
+          <a
+            href="#id3"
+            data-bs-toggle="collapse"
+            style="text-decoration: none"
+          >
+            <li class="list-group-item d-flex text-center">
+              <div class="fw-bold" style="width: 35%">İncoming Offers</div>
+            </li>
+          </a>
+          <div id="id3" class="collapse show">
+            <li class="list-group-item d-flex text-center">
+              <div class="align-self-center" style="width: 35%">
+                Yasin Sezer Türk
+              </div>
+              <div style="width: 40%">
+                <div class="d-flex justify-content-between">
+                  <div class="text-secondary">Application Date</div>
+                  <div class="fw-bold">10.03.2022</div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="text-secondary">Bid Amount</div>
+                  <div class="fw-bold">-</div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="text-secondary">E-mail</div>
+                  <div class="fw-bold">onal@gmail.com</div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="text-secondary">Telephone</div>
+                  <div class="fw-bold">0(551)6474645</div>
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-center justify-content-between flex-column"
+                style="width: 25%"
+              >
+                <div class="dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-danger fw-bold"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    >Did Not Offer</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Link 1</a></li>
+                    <li><a class="dropdown-item" href="#">Link 2</a></li>
+                    <li><a class="dropdown-item" href="#">Link 3</a></li>
+                  </ul>
+                </div>
+                <div
+                  class="btn btn-danger text-white btn-sm align-self-center"
+                  style="width: 85%"
+                >
+                  View All Details
+                </div>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </section>
   </body>
 </html>
